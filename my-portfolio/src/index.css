@@ -22,3 +22,20 @@ code {
     src: local("Archivo-Regular"),
     url('./assests/fonts/Archivo-Regular.ttf') format("truetype");
 }
+@font-face {
+  font-family: "Medium";
+  src: local("Archivo-Medium"),
+  url('./assests/fonts/Archivo-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Bold";
+  src: local("Archivo-Bold"),
+  url('./assests/fonts/Archivo-Bold.ttf') format("truetype");
+}
+@font-face {
+  font-family: "SemiBold";
+  src: local("Archivo-SemiBold"),
+  url('./assests/fonts/Archivo-SemiBold.ttf') format("truetype");
+}
+
+
