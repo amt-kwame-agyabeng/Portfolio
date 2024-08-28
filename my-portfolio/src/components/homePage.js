@@ -4,8 +4,8 @@ const HomePage = () => {
   return (
     <div>
      <nav className="flex justify-between items-center  text-black">
-  <header className="text-3xl font-bold">DEV.KA</header>
-  <div className="flex gap-10 items-center">
+  <header className="text-3xl font-regular">DEV.KA</header>
+  <div className="flex gap-10 items-center font-regular">
     <a href="#projects" className="hover:underline ">Projects</a>
     <a href="#about" className="hover:underline">About</a>
     <a href="https://medium.com/@kwameagyabeng63" className="hover:underline">Blog</a>
@@ -14,17 +14,17 @@ const HomePage = () => {
     </button>
   </div>
 </nav>
-      <h1 className="text-5xl font-bold ">
+      <h1 className="text-5xl font-bold">
         Frontend Developer 
       </h1>
       <h1 className="text-5xl font-bold text-gray-400">& Cloud Practitioner</h1>
-      <p className="mt-3 mb-4">
+      <p className="mt-3 mb-4 font-regular">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br></br>sed do
         eiusmod tempor incididunt ut labore <br></br>et dolore magna aliqua. Ut enim ad
         minim veniam, <br></br>quis nostrud exercitation ullamco laboris nisi ut
       </p>
       <div className="flex items-center gap-2 mt-3 mb-5">
-      <p>See More About Me</p>
+      <p className="font-regular">See More About Me</p>
       <svg
         stroke="currentColor"
         fill="currentColor"
@@ -79,11 +79,11 @@ const HomePage = () => {
       </svg>
       </div>
       <div className="projects">
-      <p className="">Projects.</p>
+      <p className="font-medium text-2xl">Projects.</p>
       <div className="flex flex-row w-full gap-10">
       <div className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between" style={{ backgroundColor: 'rgba(221, 238, 246, 0.4)' }}>
          
-          <p className="cursor-default">~ Portfolio</p>
+          <p className="cursor-default font-regular">~ Portfolio</p>
           <svg
             stroke="currentColor"
             fill="none"
@@ -105,7 +105,7 @@ const HomePage = () => {
 
         
       <div className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between" style={{ backgroundColor: 'rgba(221, 238, 246, 0.4)' }}>
-        <p className="cursor-default">~ Currently Learning</p>
+        <p className="cursor-default font-regular">~ Currently Learning</p>
           <svg
             stroke="currentColor"
             fill="none"
@@ -128,11 +128,11 @@ const HomePage = () => {
       </div>
      
        <div className="skill">
-       <p>Skills.</p>
+       <p className="font-medium text-2xl">Skills.</p>
        </div>
       <div className="contact">
-      <p>Contact.</p>
-      <p>
+      <p className="font-medium text-2xl">Contact.</p>
+      <p className="font-regular">
         Get in touch or send me an email directly on kwameagyabeng63@gmail.com
       </p>
       <div className="name border border-gray-300 p-3 rounded-lg w-1/2">
@@ -152,7 +152,7 @@ const HomePage = () => {
         Send Message
       </button>
       </div>
-     <p className="text-center">© 2024 Kwame Aboagye Agyabeng</p>
+     <p className="text-center font-regular">© 2024 Kwame Aboagye Agyabeng</p>
     </div>
   );
 };
