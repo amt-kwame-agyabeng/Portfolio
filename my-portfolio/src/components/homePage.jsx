@@ -1,6 +1,16 @@
 import React from "react";
 
 const HomePage = () => {
+
+const handleResumeClick = () => {
+  const resumeLink = 'https://drive.google.com/file/d/1YdBosHeUvtQZd6mQQgR2ZbsVCdE47SpR/view?usp=sharing';
+  window.location.href = resumeLink;
+
+
+}
+
+
+
   return (
     <div>
       <nav className="flex justify-between items-center  text-black">
@@ -18,21 +28,21 @@ const HomePage = () => {
           >
             Blog
           </a>
-          <button className="text-white bg-black border rounded-lg px-3 py-2 hover:bg-gray-700">
+          <button className="text-white bg-black border rounded-lg px-3 py-2 hover:bg-gray-700" onClick={handleResumeClick}>
             Resume
           </button>
         </div>
       </nav>
-      <h1 className="text-5xl font-bold">Frontend Developer</h1>
+      <h1 className="text-5xl font-bold mt-14">Frontend Developer</h1>
       <h1 className="text-5xl font-bold text-gray-400">& Cloud Practitioner</h1>
-      <p className="mt-3 mb-4 font-regular tracking-wide">
+      <p className="mt-7 mb-4 font-regular tracking-wide leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br></br>sed do
         eiusmod tempor incididunt ut labore <br></br>et dolore magna aliqua. Ut
         enim ad minim veniam, <br></br>quis nostrud exercitation ullamco laboris
         nisi ut
       </p>
-      <div className="flex items-center gap-2 mt-3 mb-5">
-        <p className="font-regular">See More About Me</p>
+      <div className="flex items-center gap-2 mt-5 mb-5">
+        <p className="font-regular ">See More About Me</p>
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -85,14 +95,14 @@ const HomePage = () => {
           <path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"></path>
         </svg>
       </div>
-      <div className="projects">
-        <p className="font-medium text-2xl">Projects.</p>
+      <div className="projects mt-20">
+        <p className="font-medium text-2xl mb-5">Projects.</p>
         <div className="flex flex-row w-full gap-10">
           <div
             className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between"
             style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
           >
-            <p className="cursor-default font-regular">~ Portfolio</p>
+            <p className="cursor-default font-regular"> Personal Portfolio website</p>
             <svg
               stroke="currentColor"
               fill="none"
@@ -115,7 +125,7 @@ const HomePage = () => {
             className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between"
             style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
           >
-            <p className="cursor-default font-regular">~ Currently Learning</p>
+            <p className="cursor-default font-regular">Currently Learning ~ AWS Restart Program</p>
             <svg
               stroke="currentColor"
               fill="none"
@@ -134,6 +144,26 @@ const HomePage = () => {
             </svg>
           </div>
         </div>
+        <div className="flex flex-row gap-10 items-center text-center font-regular">
+        <div className=" border border-gray-300 p-3 rounded-lg mt-6">
+         <p>Project Name</p>
+         <p >Project Date</p>
+         
+        </div>
+        <div className=" border border-gray-300 p-3 rounded-lg mt-6">
+        <p >Project Name</p>
+        <p>Project Date</p>
+        
+       
+        </div>
+        <div className=" border border-gray-300 p-3 rounded-lg mt-6">
+        <p>Project Name</p>
+        <p>Project Date</p>
+       
+       
+        </div>
+        </div>
+
       </div>
 
       <div className="skill">
@@ -141,10 +171,10 @@ const HomePage = () => {
       </div>
       <div className="contact">
         <p className="font-medium text-2xl">Contact.</p>
-        <p className="font-regular">
+        <p className="font-regular mt-5 mb-7">
           Get in touch or send me an email directly on kwameagyabeng63@gmail.com
         </p>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-7">
           <div className="name border border-gray-300 p-3 rounded-lg w-1/2">
             <input
               className="focus:outline-none"
