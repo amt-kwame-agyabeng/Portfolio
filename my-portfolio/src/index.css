@@ -37,5 +37,8 @@ code {
   src: local("Archivo-SemiBold"),
   url('./assests/fonts/Archivo-SemiBold.ttf') format("truetype");
 }
-
-
+@font-face {
+  font-family: "Light";
+  src: local("Archivo-Light"),
+  url('./assests/fonts/Archivo-Light.ttf') format("truetype");
+}
