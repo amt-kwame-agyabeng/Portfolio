@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const HomePage = () => {
   const handleResumeClick = () => {
     const resumeLink =
@@ -67,11 +68,11 @@ const HomePage = () => {
           </span>
         </div>
       </div>
-      <p className="font-light text-6xl">KWAME</p>
-      <p className="font-light text-6xl">AGYABENG</p>
-      <p className="font-light mt-5">Frontend Developer {""} | {""} Cloud Practitioner Based in Ghana 🇬🇭</p>
+      <p className="font-light text-7xl mt-3">KWAME</p>
+      <p className="font-light text-7xl ">AGYABENG</p>
+      <p className="font-light mt-5 mb-7">Frontend Developer {""} | {""} Cloud Practitioner Based in Ghana 🇬🇭</p>
 
-        <button className="border-2 border-gray-900 px-4 py-1 rounded-lg  flex items-center gap- mt-5 ">See More <svg
+        <button className="border-2 border-gray-900 px-4 py-1 rounded-lg  flex items-center gap-2  font-light">See More <svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -79,6 +80,7 @@ const HomePage = () => {
           height="2em"
           width="2em"
           xmlns="http://www.w3.org/2000/svg"
+          
         >
           <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
         </svg></button>
@@ -131,10 +133,10 @@ const HomePage = () => {
         </svg>
       </div>
       <div className="projects mt-20">
-        <p className="font-medium text-2xl mb-5">Projects.</p>
-        <div className="flex flex-row w-full gap-10">
+        <p className="font-medium text-2xl mb-5">Projects</p>
+        <div className="flex flex-row w-full gap-10 mb-9">
           <div
-            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between"
+            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300  items-center justify-between hidden"
             style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
           >
             <p className="cursor-default font-regular">
@@ -160,7 +162,7 @@ const HomePage = () => {
           </div>
 
           <div
-            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300 flex items-center justify-between"
+            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300  items-center justify-between flex max-w-prose"
             style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
           >
             <p className="cursor-default font-regular">
@@ -184,27 +186,15 @@ const HomePage = () => {
             </svg>
           </div>
         </div>
-        <div className="flex flex-row gap-10 items-center text-center font-regular">
-          <div className=" border border-gray-300 p-3 rounded-lg mt-6">
-            <p>Project Name</p>
-            <p>Project Date</p>
-          </div>
-          <div className=" border border-gray-300 p-3 rounded-lg mt-6">
-            <p>Project Name</p>
-            <p>Project Date</p>
-          </div>
-          <div className=" border border-gray-300 p-3 rounded-lg mt-6">
-            <p>Project Name</p>
-            <p>Project Date</p>
-          </div>
-        </div>
+        
+       
       </div>
 
       <div className="skill">
-        <p className="font-medium text-2xl">Skills.</p>
+        <p className="font-medium text-2xl">Skills</p>
       </div>
       <div className="contact">
-        <p className="font-medium text-2xl">Contact.</p>
+        <p className="font-medium text-2xl">Contact</p>
         <p className="font-regular mt-5 mb-7">
           Get in touch or send me an email directly on kwameagyabeng63@gmail.com
         </p>
