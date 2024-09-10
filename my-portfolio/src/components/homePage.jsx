@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const HomePage = () => {
+const HomePage = ({onToggle}) => {
   const handleResumeClick = () => {
     const resumeLink =
       "https://drive.google.com/file/d/1YdBosHeUvtQZd6mQQgR2ZbsVCdE47SpR/view?usp=sharing";
@@ -26,7 +25,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <nav className="flex justify-between items-center  text-black">
+      <nav className="flex justify-between items-center">
         <header className="text-5xl">🧑🏽‍💻</header>
         <div className="flex gap-10 items-center font-regular">
           <a href="#projects" className="hover:underline ">
@@ -42,11 +41,35 @@ const HomePage = () => {
             Blog
           </a>
           <button
-            className="text-white bg-black border rounded-lg px-3 py-2 hover:bg-gray-700"
+            className="text-white bg-black  rounded-lg px-3 py-2"
             onClick={handleResumeClick}
           >
             Resume
           </button>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            version="1.1"
+            id="Layer_1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 30 30"
+            height="1.8em"
+            width="1.8em"
+            xmlns="http://www.w3.org/2000/svg"
+            className="cursor-pointer"
+            onClick={onToggle}
+            
+          >
+            <path
+              d="M3.74,14.44c0-1.52,0.3-2.98,0.89-4.37s1.4-2.58,2.4-3.59s2.2-1.81,3.59-2.4s2.84-0.89,4.37-0.89s2.98,0.3,4.37,0.89
+	s2.59,1.4,3.6,2.4s1.81,2.2,2.4,3.59s0.89,2.84,0.89,4.37s-0.3,2.98-0.89,4.37s-1.4,2.59-2.4,3.6s-2.2,1.81-3.6,2.4
+	s-2.85,0.89-4.37,0.89s-2.98-0.3-4.37-0.89s-2.58-1.4-3.59-2.4s-1.81-2.2-2.4-3.6S3.74,15.97,3.74,14.44z M14.8,24.51h0.19
+	c1.37,0,2.67-0.27,3.91-0.8s2.31-1.25,3.21-2.15s1.61-1.97,2.15-3.21s0.8-2.54,0.8-3.91c0-1.36-0.27-2.66-0.8-3.9
+	s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15s-2.54-0.8-3.91-0.8H14.8V24.51z"
+            ></path>
+          </svg>
         </div>
       </nav>
       <div className="flex items-center gap-2 mt-9">
@@ -64,15 +87,19 @@ const HomePage = () => {
         <div className="flex flex-row items-center">
           <p className="font-extralight text-xl">Hello I'm</p>
           <span role="img" aria-label="victoryhand">
-          ✌🏽
+            ✌🏽
           </span>
         </div>
       </div>
       <p className="font-light text-7xl mt-3">KWAME</p>
       <p className="font-light text-7xl ">AGYABENG</p>
-      <p className="font-light mt-5 mb-7">Frontend Developer {""} | {""} Cloud Practitioner Based in Ghana 🇬🇭</p>
+      <p className="font-light mt-7 mb-7">
+        Frontend Developer {""} | {""} Cloud Practitioner Based in Ghana 🇬🇭
+      </p>
 
-        <button className="border-2 border-gray-900 px-4 py-1 rounded-lg  flex items-center gap-2  font-light">See More <svg
+      <button className="border-2 border-gray-900 px-4 py-1 rounded-lg  flex items-center gap-2  font-light">
+        See More{" "}
+        <svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -80,12 +107,10 @@ const HomePage = () => {
           height="2em"
           width="2em"
           xmlns="http://www.w3.org/2000/svg"
-          
         >
           <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-        </svg></button>
-        
-      
+        </svg>
+      </button>
 
       <div className="flex gap-10 items-center mt-10">
         <svg
@@ -135,21 +160,18 @@ const HomePage = () => {
       <div className="projects mt-20">
         <p className="font-medium text-2xl mb-5">Projects</p>
         <div className="flex flex-row w-full gap-10 mb-9">
-          <div
-            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300  items-center justify-between hidden"
-            style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
-          >
+          <div className="border-2 border-gray-900 p-2 rounded-lg flex-1  items-center justify-between  flex">
             <p className="cursor-default font-regular">
               {" "}
               Personal Portfolio website
             </p>
             <svg
-              stroke="currentColor"
+              stroke="black"
               fill="none"
               stroke-width="0"
               viewBox="0 0 24 24"
-              height="2em"
-              width="1em"
+              height="1.2em"
+              width="1.2em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -161,20 +183,17 @@ const HomePage = () => {
             </svg>
           </div>
 
-          <div
-            className="border border-gray-300 p-2 rounded-lg bg-[#DDEEF6] flex-1 hover:shadow-xl transition-shadow duration-300  items-center justify-between flex max-w-prose"
-            style={{ backgroundColor: "rgba(221, 238, 246, 0.4)" }}
-          >
+          <div className="border-2 border-gray-900 p-2 rounded-lg flex-1 items-center justify-between flex max-w-prose ">
             <p className="cursor-default font-regular">
               Currently Learning ~ AWS Restart Program
             </p>
             <svg
-              stroke="currentColor"
+              stroke="black"
               fill="none"
               stroke-width="0"
               viewBox="0 0 24 24"
-              height="2em"
-              width="1em"
+              height="1.2em"
+              width="1.2em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -186,8 +205,6 @@ const HomePage = () => {
             </svg>
           </div>
         </div>
-        
-       
       </div>
 
       <div className="skill">
@@ -201,21 +218,22 @@ const HomePage = () => {
         <div className="flex flex-col gap-7">
           <div className="name border border-gray-300 p-3 rounded-lg w-1/2">
             <input
-              className="focus:outline-none"
+              className="focus:outline-none w-[100%] bg-transparent"
               type="text"
               placeholder="Name"
             />
           </div>
-          <div className="email border border-gray-300 p-3 rounded-lg w-1/2">
+          <div className="email border border-gray-300 p-3 rounded-lg w-1/2 ">
             <input
-              className="focus:outline-none"
+              className="focus:outline-none w-[100%] bg-transparent"
               type="text"
               placeholder="Email"
+
             />
           </div>
-          <div className="message border border-gray-300 p-3 rounded-lg w-1/2 h-40">
+          <div className="name border border-gray-300 p-3 rounded-lg w-1/2 h-40 ">
             <textarea
-              className="w-full min-h-[100px] max-h-[200px] p-2  overflow-auto focus:outline-none resize-none"
+              className="w-full min-h-[100px] max-h-[200px] p-2  overflow-auto focus:outline-none resize-none bg-transparent"
               placeholder="Message"
             />
           </div>
@@ -226,7 +244,11 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <p className="text-center font-regular">© 2024 Kwame Aboagye Agyabeng</p>
+      <footer>
+        <p className="text-center font-regular">
+          © 2024 Kwame Aboagye Agyabeng
+        </p>
+      </footer>
     </div>
   );
 };
