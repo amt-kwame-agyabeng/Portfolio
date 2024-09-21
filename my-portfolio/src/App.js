@@ -17,7 +17,7 @@ function App() {
   
 
   return (
-    <div className={`App px-12 pt-10 ${darkMode ? 'dark' : 'light'}`}> 
+    <div className={`App px-12 pt-10 ${darkMode ? 'bg-black text-white' : ' bg-white'}`}> 
      <HomePage onToggle={toggleDarkMode}/>
     
     </div>
