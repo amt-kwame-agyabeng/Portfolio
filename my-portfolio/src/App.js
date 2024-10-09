@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import HomePage from './components/homePage';
-
-
-
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode(prev => !prev);
   };
-  
 
-  
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark' : 'light';
+  }, [darkMode]);
 
   return (
-    <div className={`App px-12 pt-10 ${darkMode ? 'bg-black text-white' : ' bg-white'}`}> 
-     <HomePage onToggle={toggleDarkMode}/>
-    
+    <div className={`App px-10 pt-10 ${darkMode ? 'dark' : 'light'}`}>
+      <HomePage onToggle={toggleDarkMode} darkMode={darkMode} />
     </div>
   );
 }
