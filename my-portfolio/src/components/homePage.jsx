@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 
 const HomePage = ({ onToggle, darkMode }) => {
+  const [dropdown, setDropdown] = useState(false);
+
   const handleResumeClick = () => {
     const resumeLink =
       "https://drive.google.com/file/d/1YdBosHeUvtQZd6mQQgR2ZbsVCdE47SpR/view?usp=sharing";
@@ -24,11 +26,9 @@ const HomePage = ({ onToggle, darkMode }) => {
     window.location.href = XLink;
   };
 
-  const [dropdown,  setDropdown] = useState(false);
-
-  const handleMenuClick  = () => {
+  const handleMenuClick = () => {
     setDropdown(!dropdown);
-  }
+  };
 
   return (
     <div>
@@ -95,9 +95,8 @@ const HomePage = ({ onToggle, darkMode }) => {
           <path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"></path>
         </svg>
       </nav>
-       
-       {dropdown && <Dropdown onToggle={onToggle} darkMode={darkMode}/>}
 
+      {dropdown && <Dropdown onToggle={onToggle} darkMode={darkMode} />}
 
       <div className="flex items-center gap-2 mt-9">
         <svg
@@ -187,11 +186,73 @@ const HomePage = ({ onToggle, darkMode }) => {
       </div>
       <div className="projects mt-20">
         <p className="font-medium text-2xl mb-5">Projects</p>
-        <div className="main flex flex-col md:flex-row w-full gap-5 mb-9">
+        <div className={`shadow-lg p-5  ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
+          <div className="flex items-center gap-1">
+            <div>
+              <p className="font-medium">Project Name</p>
+            </div>
+            <div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 12 16"
+                height="1.2em"
+                width="1.2em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <p className="font-light text-[0.95rem] text-gray-500 mt-1">
+            Project Info
+          </p>
+
+          <p className="text-[0.80rem] font-extralight text-gray-500 mt-1">
+            Tools Used
+          </p>
+        </div>
+
+        <div className={`shadow-lg p-5 mt-7 ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
+          <div className="flex items-center gap-1">
+            <div>
+              <p className="font-medium">Project Name</p>
+            </div>
+            <div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 12 16"
+                height="1.2em"
+                width="1.2em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <p className="font-light text-[0.95rem] text-gray-600 mt-1">
+            Project Info
+          </p>
+
+          <p className="text-[0.80rem] font-extralight text-gray-600 mt-1">
+            Tools Used
+          </p>
+        </div>
+        {/* <div className="main flex flex-col md:flex-row w-full gap-5 mb-9">
           <div
-            className={`shadow-lg rounded-md px-3 py-3 w-[100%] items-center justify-between flex  ${
-              darkMode ? "" : "border border-gray-500"
-            }`}
+            className="shadow-lg rounded-md px-3 py-3 w-[100%] items-center justify-between flex border border-gray-500"
+           
           >
             <p className="cursor-default font-regular text-[12px] md:text-base">
               {" "}
@@ -217,9 +278,8 @@ const HomePage = ({ onToggle, darkMode }) => {
           </div>
 
           <div
-            className={`shadow-lg rounded-md px-3 py-3 w-[100%] items-center justify-between flex ${
-              darkMode ? "" : "border border-gray-500"
-            }`}
+            className="shadow-lg rounded-md px-3 py-3 w-[100%] items-center justify-between flex border border-gray-500"
+           
           >
             <p className="cursor-default font-regular text-[12px] md:text-base">
               AWS Restart Program ~{" "}
@@ -242,7 +302,7 @@ const HomePage = ({ onToggle, darkMode }) => {
               ></path>
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <section className="skill-section mt-20">
@@ -252,7 +312,7 @@ const HomePage = ({ onToggle, darkMode }) => {
       <section className="contact">
         <div className="contact">
           <p className="font-medium text-2xl">Contact</p>
-          <p className="font-regular mt-5 mb-7 text-sm">
+          <p className="font-regular mt-5 mb-7 text-md">
             Get in touch or send me an email directly on
             kwameagyabeng63@gmail.com
           </p>
