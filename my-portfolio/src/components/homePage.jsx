@@ -305,8 +305,8 @@ const HomePage = ({ onToggle, darkMode }) => {
       </div>
 
       <section className="skill-section mt-20">
-        <p className="font-medium text-2xl mb-5">Skills</p>
-        <p>Aws</p>
+        <p className="font-medium text-2xl">Skills</p>
+       
         <div>
           
         </div>
