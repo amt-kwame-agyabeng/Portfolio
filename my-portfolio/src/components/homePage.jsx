@@ -5,8 +5,7 @@ const HomePage = ({ onToggle, darkMode }) => {
   const [dropdown, setDropdown] = useState(false);
 
   const handleResumeClick = () => {
-    const resumeLink =
-      "https://drive.google.com/file/d/1YdBosHeUvtQZd6mQQgR2ZbsVCdE47SpR/view?usp=sharing";
+    const resumeLink ="https://drive.google.com/file/d/1oEwiQ3RBMkLmhVgFCzzFFskcoNeFTkYT/view?usp=sharing";
     window.location.href = resumeLink;
   };
 
@@ -120,8 +119,8 @@ const HomePage = ({ onToggle, darkMode }) => {
       </div>
       <p className="font-light text-3xl md:text-7xl mt-3 ">KWAME</p>
       <p className="font-light text-3xl md:text-7xl">AGYABENG</p>
-      <p className="font-regular mt-7 mb-7 text-[12px] md:text-base ">
-        Frontend Developer {""} | {""} Cloud Practitioner Based in Ghana 🇬🇭
+      <p className="font-regular mt-7 mb-7 text-md md:text-base ">
+        Frontend Developer {""} | {""} AWS Certified Cloud Practitioner Based in Ghana 🇬🇭
       </p>
 
       <button className="border border-gray-500 px-4 py-1 rounded-md  flex items-center gap-2  font-light text-[12px] md:text-base">
@@ -186,10 +185,10 @@ const HomePage = ({ onToggle, darkMode }) => {
       </div>
       <div className="projects mt-20">
         <p className="font-medium text-2xl mb-5">Projects</p>
-        <div className={`shadow-lg p-5  ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
+        <div className={`shadow-xl p-5  ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
           <div className="flex items-center gap-1">
             <div>
-              <p className="font-medium">Project Name</p>
+              <p className="font-regular text-base">Project Name</p>
             </div>
             <div>
               <svg
@@ -218,10 +217,10 @@ const HomePage = ({ onToggle, darkMode }) => {
           </p>
         </div>
 
-        <div className={`shadow-lg p-5 mt-7 ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
+        <div className={`shadow-xl p-5 mt-7 ${darkMode ? 'shadow-[0_10px_30px_rgba(0,0,0,0.9)] bg-[#060606]' : ''}`}>
           <div className="flex items-center gap-1">
             <div>
-              <p className="font-medium">Project Name</p>
+              <p className="font-regular text-base">Project Name</p>
             </div>
             <div>
               <svg
@@ -307,6 +306,9 @@ const HomePage = ({ onToggle, darkMode }) => {
 
       <section className="skill-section mt-20">
         <p className="font-medium text-2xl mb-5">Skills</p>
+        <div>
+          
+        </div>
       </section>
 
       <section className="contact">
@@ -324,7 +326,7 @@ const HomePage = ({ onToggle, darkMode }) => {
                 placeholder="Name"
               />
             </div>
-            <div className="email md:w-1/2 border border-gray-500 p-3 rounded-lg ">
+            <div className="email md:w-1/2 border border-gray-500 p-3 rounded-lg">
               <input
                 className="focus:outline-none w-[100%] bg-transparent"
                 type="text"

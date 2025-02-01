@@ -6,7 +6,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(prev => !prev);
+    setDarkMode(!darkMode);
   };
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={`App px-10 pt-10 ${darkMode ? 'dark' : 'light'}`}>
-      <HomePage onToggle={toggleDarkMode} darkMode={darkMode} />
+      <HomePage onToggle={toggleDarkMode} darkMode={darkMode}/>
     </div>
   );
 }

@@ -4,7 +4,8 @@ const AboutPage = () => {
   return (
     <div>
       <div>
-        I'M KWAME ABOAGYE AGYABENG
+        <h3>I'M KWAME ABOAGYE AGYABENG </h3>
+        
       </div>
     </div>
   )
